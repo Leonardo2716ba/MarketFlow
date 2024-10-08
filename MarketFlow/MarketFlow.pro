@@ -10,17 +10,14 @@ CONFIG += c++17
 
 # Listar automaticamente todos os arquivos .cpp
 SOURCES += $$files($$PWD/src/*.cpp, true) \
-    src/cadastro_produto.cpp
 
 
 # Listar automaticamente todos os arquivos .h
 HEADERS += $$files($$PWD/src/*.h, true) \
-    src/cadastro_produto.h
 
 
 # Listar automaticamente todos os arquivos .ui
 FORMS += $$files($$PWD/src/*.ui, true) \
-    src/cadastro_produto.ui
 
 
 # Default rules for deployment.
