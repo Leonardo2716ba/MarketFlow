@@ -9,10 +9,11 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QVBoxLayout>
+#include <iostream>
 #include <QApplication>
 #include <QSqlDatabase>
 #include <QDebug>
-
+/*
 
 // Função para conectar ao banco de dados SQLite
 bool connectToDatabase() {
@@ -41,14 +42,16 @@ int main(int argc, char *argv[]) {
 
     // Tentar conectar ao banco de dados
     if (!connectToDatabase()) {
+        std::cout<< "Lascou se\n";
         return -1;
     }
     else{
-        LoginWindow login;
-        login.show();
+        //LoginWindow login;
+        //login.show();
         //cadastro_de_produtos
         return a.exec(); // Iniciar o loop de eventos da aplicação
     }
 
     return a.exec(); // Iniciar o loop de eventos da aplicação
 }
+*/

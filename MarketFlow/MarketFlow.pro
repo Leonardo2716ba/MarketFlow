@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,14 +10,18 @@ CONFIG += c++17
 
 # Listar automaticamente todos os arquivos .cpp
 SOURCES += $$files($$PWD/src/*.cpp, true) \
-    src/loginwindow.cpp
+    src/cadastro_produto.cpp
+
 
 # Listar automaticamente todos os arquivos .h
 HEADERS += $$files($$PWD/src/*.h, true) \
-    src/loginwindow.h
+    src/cadastro_produto.h
+
 
 # Listar automaticamente todos os arquivos .ui
-FORMS += $$files($$PWD/src/*.ui, true)
+FORMS += $$files($$PWD/src/*.ui, true) \
+    src/cadastro_produto.ui
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
